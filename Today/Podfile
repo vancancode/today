@@ -3,6 +3,7 @@
 
 target 'Today' do
    use_frameworks!
+   pod 'Kingfisher', '~> 4.0'
    pod 'Alamofire', '~> 4.7'
    pod 'Hero', '~> 1.1'
    pod 'SwiftyJSON'

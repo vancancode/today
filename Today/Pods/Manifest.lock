@@ -7,6 +7,7 @@ PODS:
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
   - Hero (1.1.0)
+  - Kingfisher (4.6.3)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - Alamofire-SwiftyJSON
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`, branch `wip/swift4`)
   - Hero (~> 1.1)
+  - Kingfisher (~> 4.0)
   - SwiftyJSON
 
 EXTERNAL SOURCES:
@@ -31,8 +33,9 @@ SPEC CHECKSUMS:
   Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Hero: ce59e81c79390613d97b43da7179e2c5e1017e04
+  Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: e0a3afc7ba0d2a49aefda8f57e341547f0cee0d3
+PODFILE CHECKSUM: c49adabbd6fde33adcb7a4a698feab9b09a3fefd
 
 COCOAPODS: 1.4.0
