@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,26 +17,127 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DID WORK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oA-MP-3sn">
-                                <rect key="frame" x="146" y="333" width="83" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="117" y="462" width="142" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D0e-wX-0CR">
+                                <rect key="frame" x="44" y="122" width="287" height="287"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="D0e-wX-0CR" secondAttribute="height" multiplier="1:1" id="T6P-Y9-hE8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="batman"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOy-fg-HsQ">
+                                <rect key="frame" x="44" y="122" width="287" height="287"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="batman"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="MZM-i1-db9" kind="presentation" id="jhV-hX-Pie">
+                                        <segue key="commit" inheritsFrom="parent" id="N5J-xM-gIy"/>
+                                        <segue key="preview" inheritsFrom="commit" id="o10-Tv-T7x"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd1-Lz-ki8" customClass="FancyButton" customModule="FancyButton">
+                                <rect key="frame" x="44" y="526" width="287" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="a8g-4p-qjw"/>
+                                </constraints>
+                                <state key="normal" title="THIS IS SO COOL!!!"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableGradientBackground" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.19115509089999999" green="0.63786703349999996" blue="0.26147949700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.59542971099999997" green="1" blue="0.53474149739999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4oA-MP-3sn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0eF-PT-50Q"/>
-                            <constraint firstItem="4oA-MP-3sn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MGs-KA-DDA"/>
+                            <constraint firstItem="LOy-fg-HsQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="0iJ-8r-FV9"/>
+                            <constraint firstItem="LOy-fg-HsQ" firstAttribute="height" secondItem="D0e-wX-0CR" secondAttribute="height" id="0qc-Gz-SiK"/>
+                            <constraint firstItem="Xd1-Lz-ki8" firstAttribute="top" secondItem="4oA-MP-3sn" secondAttribute="bottom" constant="28" id="3pd-tP-uCr"/>
+                            <constraint firstItem="LOy-fg-HsQ" firstAttribute="centerY" secondItem="D0e-wX-0CR" secondAttribute="centerY" id="5vD-Lc-hlJ"/>
+                            <constraint firstItem="4oA-MP-3sn" firstAttribute="centerX" secondItem="D0e-wX-0CR" secondAttribute="centerX" id="6fR-2d-fIo"/>
+                            <constraint firstItem="Xd1-Lz-ki8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="Fkr-0U-std"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LOy-fg-HsQ" secondAttribute="trailing" constant="44" id="Hhu-xn-ddf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D0e-wX-0CR" secondAttribute="trailing" constant="44" id="Pzw-jL-dZS"/>
+                            <constraint firstItem="D0e-wX-0CR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="WxU-Fu-ZkT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xd1-Lz-ki8" secondAttribute="trailing" constant="44" id="b9H-IG-ZVc"/>
+                            <constraint firstItem="4oA-MP-3sn" firstAttribute="top" secondItem="D0e-wX-0CR" secondAttribute="bottom" constant="53" id="dd5-uP-cdb"/>
+                            <constraint firstItem="Xd1-Lz-ki8" firstAttribute="width" secondItem="LOy-fg-HsQ" secondAttribute="width" id="eS0-D5-Uzi"/>
+                            <constraint firstItem="LOy-fg-HsQ" firstAttribute="baseline" secondItem="D0e-wX-0CR" secondAttribute="baseline" id="jjI-fs-8lX"/>
+                            <constraint firstItem="4oA-MP-3sn" firstAttribute="top" secondItem="LOy-fg-HsQ" secondAttribute="bottom" constant="53" id="mN0-7l-ZeD"/>
+                            <constraint firstItem="LOy-fg-HsQ" firstAttribute="width" secondItem="D0e-wX-0CR" secondAttribute="width" id="r83-CW-0jV"/>
+                            <constraint firstItem="D0e-wX-0CR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="vf2-gU-6eb"/>
+                            <constraint firstItem="LOy-fg-HsQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="wWP-t8-IVf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="button" destination="LOy-fg-HsQ" id="aaJ-Yd-uti"/>
+                        <outlet property="imageView" destination="D0e-wX-0CR" id="eZu-Oa-siw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="fOd-H9-467">
+            <objects>
+                <viewController storyboardIdentifier="landing" id="MZM-i1-db9" customClass="MainViewController" customModule="Today" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7xs-Lo-7At">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mt9-cx-aON">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="batman"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jnx-BH-cbq" firstAttribute="trailing" secondItem="mt9-cx-aON" secondAttribute="trailing" id="Mso-MQ-oL9"/>
+                            <constraint firstItem="jnx-BH-cbq" firstAttribute="bottom" secondItem="mt9-cx-aON" secondAttribute="bottom" id="S0N-Le-dgK"/>
+                            <constraint firstItem="mt9-cx-aON" firstAttribute="top" secondItem="jnx-BH-cbq" secondAttribute="top" id="cAS-4c-zF0"/>
+                            <constraint firstItem="mt9-cx-aON" firstAttribute="leading" secondItem="jnx-BH-cbq" secondAttribute="leading" id="osX-Sm-Q9S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jnx-BH-cbq"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="backgroundView" destination="mt9-cx-aON" id="pFL-41-gvV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iY7-yD-hEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jhV-hX-Pie"/>
+    </inferredMetricsTieBreakers>
 </document>

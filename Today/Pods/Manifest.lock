@@ -6,36 +6,50 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
+  - FancyButton (1.0.0)
   - Hero (1.1.0)
   - Kingfisher (4.6.3)
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - Alamofire-SwiftyJSON
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`, branch `wip/swift4`)
+  - FancyButton (from `https://ivanjueves@bitbucket.org/ivanjueves/fancybutton.git`)
   - Hero (~> 1.1)
   - Kingfisher (~> 4.0)
+  - Nimble
+  - Quick
   - SwiftyJSON
 
 EXTERNAL SOURCES:
   ChameleonFramework:
     :branch: wip/swift4
     :git: https://github.com/ViccAlexander/Chameleon.git
+  FancyButton:
+    :git: https://ivanjueves@bitbucket.org/ivanjueves/fancybutton.git
 
 CHECKOUT OPTIONS:
   ChameleonFramework:
     :commit: db432ca1b1a3d8f83ee1f881208c0c960a325e73
     :git: https://github.com/ViccAlexander/Chameleon.git
+  FancyButton:
+    :commit: ab4392592c7fab744af6ddbe9551c63a443cbeb6
+    :git: https://ivanjueves@bitbucket.org/ivanjueves/fancybutton.git
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  FancyButton: 8c1d1fcffd5c609821262167f7119661dfd52a11
   Hero: ce59e81c79390613d97b43da7179e2c5e1017e04
   Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: c49adabbd6fde33adcb7a4a698feab9b09a3fefd
+PODFILE CHECKSUM: e32bd3a4dd76d0a556846e0f5ed72f6f9e27bea9
 
 COCOAPODS: 1.4.0

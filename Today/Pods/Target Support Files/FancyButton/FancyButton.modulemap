@@ -1,0 +1,6 @@
+framework module FancyButton {
+  umbrella header "FancyButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
