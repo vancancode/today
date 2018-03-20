@@ -47,7 +47,7 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd1-Lz-ki8" customClass="FancyButton" customModule="FancyButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd1-Lz-ki8" customClass="LovelyButton" customModule="LovelyButton">
                                 <rect key="frame" x="44" y="526" width="287" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="a8g-4p-qjw"/>
@@ -65,6 +65,9 @@
                                         <color key="value" red="0.59542971099999997" green="1" blue="0.53474149739999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s3T-da-IwT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

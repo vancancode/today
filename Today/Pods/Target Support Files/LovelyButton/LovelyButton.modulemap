@@ -1,0 +1,6 @@
+framework module LovelyButton {
+  umbrella header "LovelyButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

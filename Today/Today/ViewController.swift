@@ -25,5 +25,13 @@ class ViewController: UIViewController {
 //        self.imageView.kf.setImage(with: url);
         
     }
+    @IBAction func onButtonTap(_ sender: Any) {
+        let next = (UIStoryboard(name: "Basic", bundle: nil).instantiateViewController(withIdentifier: "ButtonsVertical") as? ButtonsVerticalViewController)!
+//        hero.replaceViewController(with: next)
+        DispatchQueue.main.async {
+            self.present(next, animated: true, completion: nil)
+        }
+        
+    }
 }
 

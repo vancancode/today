@@ -1,6 +1,6 @@
 //
-//  FancyButton.swift
-//  FancyButton
+//  LovelyButton.swift
+//  LovelyButton
 //
 //  Created by Simon Ng on 17/12/2016.
 //  Copyright © 2016 AppCoda. All rights reserved.
@@ -9,8 +9,8 @@
 import UIKit
 
 @IBDesignable
-public class FancyButton: UIButton {
-
+public class LovelyButton: UIButton {
+    
     @IBInspectable public var cornerRadius: CGFloat = 0.0 {
         didSet {
             layer.cornerRadius = cornerRadius
@@ -53,7 +53,7 @@ public class FancyButton: UIButton {
             titleEdgeInsets.bottom = titleBottomPadding
         }
     }
-
+    
     @IBInspectable public var imageLeftPadding: CGFloat = 0.0 {
         didSet {
             imageEdgeInsets.left = imageLeftPadding
@@ -77,7 +77,7 @@ public class FancyButton: UIButton {
             imageEdgeInsets.bottom = imageBottomPadding
         }
     }
-
+    
     @IBInspectable public var enableImageRightAligned: Bool = false
     
     @IBInspectable public var enableGradientBackground: Bool = false

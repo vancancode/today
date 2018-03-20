@@ -15,6 +15,7 @@
 		13372500205A24990003A2DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133724FF205A24990003A2DA /* MainViewController.swift */; };
 		13372503205A24A50003A2DA /* Basic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13372501205A24A50003A2DA /* Basic.storyboard */; };
 		1337250B205A45AB0003A2DA /* TodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337250A205A45AB0003A2DA /* TodayTests.swift */; };
+		13372513205A5C380003A2DA /* ButtonsVerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13372512205A5C380003A2DA /* ButtonsVerticalViewController.swift */; };
 		80EA7F7B508FE9E7279B1BC6 /* Pods_Today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05CC7D418FB56457AF045BF /* Pods_Today.framework */; };
 		E57D5F0D1774624FD55A8410 /* Pods_TodayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B74EAC754C5D1AFACB3534 /* Pods_TodayTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		13372508205A45AB0003A2DA /* TodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1337250A205A45AB0003A2DA /* TodayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTests.swift; sourceTree = "<group>"; };
 		1337250C205A45AB0003A2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13372512205A5C380003A2DA /* ButtonsVerticalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsVerticalViewController.swift; sourceTree = "<group>"; };
 		76B74EAC754C5D1AFACB3534 /* Pods_TodayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48647DA39275A05F7B39E80 /* Pods-Today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Today.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Today/Pods-Today.debug.xcconfig"; sourceTree = "<group>"; };
 		BBD71C6019A95EEFDCC12B0A /* Pods-TodayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodayTests/Pods-TodayTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,10 +95,11 @@
 		130742F0204E646700040029 /* Today */ = {
 			isa = PBXGroup;
 			children = (
-				13372501205A24A50003A2DA /* Basic.storyboard */,
 				133724FF205A24990003A2DA /* MainViewController.swift */,
 				130742F1204E646700040029 /* AppDelegate.swift */,
 				130742F3204E646700040029 /* ViewController.swift */,
+				13372512205A5C380003A2DA /* ButtonsVerticalViewController.swift */,
+				13372501205A24A50003A2DA /* Basic.storyboard */,
 				130742F5204E646700040029 /* Main.storyboard */,
 				130742F8204E646700040029 /* Assets.xcassets */,
 				130742FA204E646700040029 /* LaunchScreen.storyboard */,
@@ -336,9 +339,9 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
-				"${BUILT_PRODUCTS_DIR}/FancyButton/FancyButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LovelyButton/LovelyButton.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -346,9 +349,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FancyButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LovelyButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +368,7 @@
 			files = (
 				13372500205A24990003A2DA /* MainViewController.swift in Sources */,
 				130742F4204E646700040029 /* ViewController.swift in Sources */,
+				13372513205A5C380003A2DA /* ButtonsVerticalViewController.swift in Sources */,
 				130742F2204E646700040029 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

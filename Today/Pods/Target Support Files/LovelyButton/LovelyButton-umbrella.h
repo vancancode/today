@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double FancyButtonVersionNumber;
-FOUNDATION_EXPORT const unsigned char FancyButtonVersionString[];
+FOUNDATION_EXPORT double LovelyButtonVersionNumber;
+FOUNDATION_EXPORT const unsigned char LovelyButtonVersionString[];
 

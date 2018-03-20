@@ -3,7 +3,7 @@
 #
 
 use_frameworks!
-#source = 'https://ivanjueves@bitbucket.org/ivanjueves/specs.git'
+#source = 'https://github.com/vancancode/specs.git'
 #source = 'https://github.com/CocoaPods/Specs.git'
 
 
@@ -14,7 +14,8 @@ end
 
 target 'Today' do
 
-   pod 'FancyButton'  , :git => 'https://ivanjueves@bitbucket.org/ivanjueves/fancybutton.git'
+#   pod 'FancyButton'  , :git => 'https://ivanjueves@bitbucket.org/ivanjueves/fancybutton.git'
+   pod 'LovelyButton' , :git => 'https://github.com/vancancode/LovelyButton.git'
    pod 'Kingfisher', '~> 4.0'
    pod 'Alamofire', '~> 4.7'
    pod 'Hero', '~> 1.1'

@@ -1,0 +1,23 @@
+{
+  "name": "LovelyButton",
+  "version": "0.1.4",
+  "swift_version": "4.0",
+  "summary": "Provides an easy to use inspectable attributes for UIButton to speed up the design process.",
+  "description": "This POD is for testing and DEMO only, the code, examples and materials all came from Simon Ng  AppCoda Tutorial",
+  "homepage": "https://github.com/vancancode/LovelyButton",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "vancancode": "ivan.z.a.jueves@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/vancancode/LovelyButton.git",
+    "tag": "0.1.4"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "LovelyButton/Classes/**/*"
+}

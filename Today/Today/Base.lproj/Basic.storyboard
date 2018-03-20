@@ -11,19 +11,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Buttons Vertical View Controller-->
         <scene sceneID="kDl-fu-fQn">
             <objects>
-                <viewController id="drN-tT-q4i" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ButtonsVertical" id="drN-tT-q4i" customClass="ButtonsVerticalViewController" customModule="Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7bL-Ay-LZ2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3I-0H-ne1">
-                                <rect key="frame" x="65" y="121" width="253" height="112"/>
+                                <rect key="frame" x="20" y="70" width="335" height="120"/>
                                 <color key="backgroundColor" red="0.59542971104874409" green="1" blue="0.53474149738418331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Y3I-0H-ne1" secondAttribute="height" multiplier="253:112" id="r5M-NH-Afb"/>
+                                    <constraint firstAttribute="height" constant="120" id="OeO-vF-y0o"/>
                                 </constraints>
                                 <state key="normal" title="Green">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -37,11 +37,8 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyL-Fd-6Ko">
-                                <rect key="frame" x="65" y="389" width="253" height="112"/>
+                                <rect key="frame" x="20" y="385" width="335" height="120"/>
                                 <color key="backgroundColor" red="1" green="0.38232226632511979" blue="0.34539852208595889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="iyL-Fd-6Ko" secondAttribute="height" multiplier="253:112" id="7AI-AI-qpr"/>
-                                </constraints>
                                 <state key="normal" title="Red">
                                     <color key="titleColor" red="0.59542971099999997" green="1" blue="0.53474149739999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -53,23 +50,9 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="arc"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkA-Or-K8d">
-                                <rect key="frame" x="168" y="583" width="39" height="30"/>
-                                <state key="normal" title="NEXT"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="navigator"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="translate(0,100) fade"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Rrx-XF-1W5" kind="show" id="gMx-9A-baq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76a-bv-PM8">
-                                <rect key="frame" x="65" y="255" width="253" height="112"/>
+                                <rect key="frame" x="20" y="231" width="335" height="120"/>
                                 <color key="backgroundColor" red="0.44207388849161544" green="0.96516003098275427" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="76a-bv-PM8" secondAttribute="height" multiplier="253:112" id="eFh-yF-cvV"/>
-                                </constraints>
                                 <state key="normal" title="Blue">
                                     <color key="titleColor" red="1" green="0.0" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -81,20 +64,73 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="arc"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6A-eG-dSw" customClass="LovelyButton" customModule="LovelyButton">
+                                <rect key="frame" x="20" y="525" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UiV-ni-R8V"/>
+                                </constraints>
+                                <state key="normal" title="Back to Reality">
+                                    <color key="titleColor" red="0.97670525312423706" green="0.60546392202377319" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.97670525312423706" green="0.60546392202377319" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="hero_dismissViewController" destination="drN-tT-q4i" eventType="touchUpInside" id="Gyq-cL-rgG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkA-Or-K8d" customClass="LovelyButton" customModule="LovelyButton">
+                                <rect key="frame" x="20" y="601" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="blv-2b-nK8"/>
+                                </constraints>
+                                <state key="normal" title="NEXT"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="navigator"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="translate(0,100) fade"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableGradientBackground" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.59542971099999997" green="1" blue="0.53474149739999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.19115509089999999" green="0.63786703349999996" blue="0.26147949700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Rrx-XF-1W5" kind="show" id="gMx-9A-baq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Nvb-5x-QyI" firstAttribute="trailing" secondItem="Y3I-0H-ne1" secondAttribute="trailing" constant="57" id="57o-mf-Pi1"/>
+                            <constraint firstItem="Y3I-0H-ne1" firstAttribute="top" secondItem="Nvb-5x-QyI" secondAttribute="top" constant="50" id="01l-jc-RDe"/>
+                            <constraint firstItem="iyL-Fd-6Ko" firstAttribute="leading" secondItem="Y3I-0H-ne1" secondAttribute="leading" id="4hN-68-xIx"/>
+                            <constraint firstItem="76a-bv-PM8" firstAttribute="top" secondItem="Y3I-0H-ne1" secondAttribute="bottom" constant="41" id="6Nn-eG-XMj"/>
+                            <constraint firstItem="iyL-Fd-6Ko" firstAttribute="width" secondItem="Y3I-0H-ne1" secondAttribute="width" id="8Dg-Z7-YWT"/>
+                            <constraint firstItem="DkA-Or-K8d" firstAttribute="top" secondItem="D6A-eG-dSw" secondAttribute="bottom" constant="26" id="8M7-kG-25v"/>
+                            <constraint firstItem="iyL-Fd-6Ko" firstAttribute="top" secondItem="76a-bv-PM8" secondAttribute="bottom" constant="34" id="EU8-re-w6N"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="D6A-eG-dSw" secondAttribute="trailing" constant="20" symbolic="YES" id="Ell-Mz-cvQ"/>
                             <constraint firstItem="DkA-Or-K8d" firstAttribute="centerX" secondItem="Nvb-5x-QyI" secondAttribute="centerX" id="Ex3-yA-LI8"/>
-                            <constraint firstItem="DkA-Or-K8d" firstAttribute="top" secondItem="iyL-Fd-6Ko" secondAttribute="bottom" constant="82" id="UqJ-UE-RUf"/>
-                            <constraint firstItem="Y3I-0H-ne1" firstAttribute="top" secondItem="Nvb-5x-QyI" secondAttribute="top" constant="101" id="cLB-l3-i6B"/>
-                            <constraint firstItem="76a-bv-PM8" firstAttribute="width" secondItem="Y3I-0H-ne1" secondAttribute="width" id="mao-LW-HLC"/>
-                            <constraint firstItem="iyL-Fd-6Ko" firstAttribute="top" secondItem="76a-bv-PM8" secondAttribute="bottom" constant="22" id="pnM-Y8-7vM"/>
-                            <constraint firstItem="Y3I-0H-ne1" firstAttribute="leading" secondItem="Nvb-5x-QyI" secondAttribute="leading" constant="65" id="qQF-j6-xcM"/>
-                            <constraint firstItem="iyL-Fd-6Ko" firstAttribute="centerX" secondItem="Y3I-0H-ne1" secondAttribute="centerX" id="sGt-3F-ZQS"/>
-                            <constraint firstItem="iyL-Fd-6Ko" firstAttribute="width" secondItem="76a-bv-PM8" secondAttribute="width" id="x9p-eY-W3f"/>
-                            <constraint firstItem="76a-bv-PM8" firstAttribute="centerX" secondItem="Y3I-0H-ne1" secondAttribute="centerX" id="ykD-iw-txa"/>
-                            <constraint firstItem="76a-bv-PM8" firstAttribute="top" secondItem="Y3I-0H-ne1" secondAttribute="bottom" constant="22" id="zEL-mK-JNy"/>
+                            <constraint firstItem="D6A-eG-dSw" firstAttribute="top" secondItem="iyL-Fd-6Ko" secondAttribute="bottom" constant="20" id="Gka-IY-MX5"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iyL-Fd-6Ko" secondAttribute="trailing" constant="20" symbolic="YES" id="NAV-Ss-Bmg"/>
+                            <constraint firstItem="76a-bv-PM8" firstAttribute="height" secondItem="Y3I-0H-ne1" secondAttribute="height" id="YM1-ZM-YPC"/>
+                            <constraint firstItem="76a-bv-PM8" firstAttribute="leading" secondItem="Y3I-0H-ne1" secondAttribute="leading" id="Z3c-20-bHy"/>
+                            <constraint firstItem="76a-bv-PM8" firstAttribute="width" secondItem="Y3I-0H-ne1" secondAttribute="width" id="czx-eu-gym"/>
+                            <constraint firstItem="D6A-eG-dSw" firstAttribute="width" secondItem="Y3I-0H-ne1" secondAttribute="width" id="deu-aP-iQD"/>
+                            <constraint firstItem="DkA-Or-K8d" firstAttribute="leading" secondItem="D6A-eG-dSw" secondAttribute="leading" id="dfB-J6-huR"/>
+                            <constraint firstItem="D6A-eG-dSw" firstAttribute="leading" secondItem="Y3I-0H-ne1" secondAttribute="leading" id="eSc-bC-Se9"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="76a-bv-PM8" secondAttribute="trailing" constant="20" symbolic="YES" id="grU-z1-yHj"/>
+                            <constraint firstItem="iyL-Fd-6Ko" firstAttribute="height" secondItem="Y3I-0H-ne1" secondAttribute="height" id="iPk-94-XHx"/>
+                            <constraint firstItem="Y3I-0H-ne1" firstAttribute="leading" secondItem="Nvb-5x-QyI" secondAttribute="leading" constant="20" id="oTI-7R-8Ue"/>
+                            <constraint firstItem="Nvb-5x-QyI" firstAttribute="trailing" secondItem="Y3I-0H-ne1" secondAttribute="trailing" constant="20" id="qTN-uG-v2s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nvb-5x-QyI"/>
                     </view>
@@ -142,12 +178,22 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroModifier" value="arc"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMz-EE-huW">
-                                <rect key="frame" x="167" y="515" width="40" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMz-EE-huW" customClass="LovelyButton" customModule="LovelyButton">
+                                <rect key="frame" x="20" y="589" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lPp-Fa-D0S"/>
+                                </constraints>
                                 <state key="normal" title="BACK"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="navigator"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="translate(0,100) fade"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.59542971099999997" green="1" blue="0.53474149739999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.19115509089999999" green="0.63786703349999996" blue="0.26147949700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableGradientBackground" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="hero_dismissViewController" destination="7c9-0R-q9A" eventType="touchUpInside" id="P6x-aY-r52"/>
@@ -178,15 +224,16 @@
                             <constraint firstItem="BLW-bM-VoM" firstAttribute="centerX" secondItem="1RH-h4-vCJ" secondAttribute="centerX" id="COd-89-35g"/>
                             <constraint firstItem="1RH-h4-vCJ" firstAttribute="trailing" secondItem="2HS-Kx-hES" secondAttribute="trailing" constant="10" id="D2m-kL-7Xc"/>
                             <constraint firstItem="2HS-Kx-hES" firstAttribute="width" secondItem="BLW-bM-VoM" secondAttribute="width" id="HWK-bt-9K6"/>
+                            <constraint firstItem="tMz-EE-huW" firstAttribute="leading" secondItem="1RH-h4-vCJ" secondAttribute="leading" constant="20" id="Oac-Ny-R2P"/>
                             <constraint firstItem="2HS-Kx-hES" firstAttribute="height" secondItem="BLW-bM-VoM" secondAttribute="height" id="nlM-UO-erm"/>
-                            <constraint firstItem="tMz-EE-huW" firstAttribute="top" secondItem="BLW-bM-VoM" secondAttribute="bottom" constant="126" id="o32-Zr-6iE"/>
+                            <constraint firstItem="tMz-EE-huW" firstAttribute="top" secondItem="BLW-bM-VoM" secondAttribute="bottom" constant="200" id="o32-Zr-6iE"/>
                             <constraint firstItem="x8k-vq-kuv" firstAttribute="leading" secondItem="1RH-h4-vCJ" secondAttribute="leading" constant="10" id="oUb-ut-8Jf"/>
                             <constraint firstItem="2HS-Kx-hES" firstAttribute="centerY" secondItem="BLW-bM-VoM" secondAttribute="centerY" id="oX2-Li-zeL"/>
                             <constraint firstItem="BLW-bM-VoM" firstAttribute="centerY" secondItem="1RH-h4-vCJ" secondAttribute="centerY" id="qBb-fI-qEP"/>
+                            <constraint firstItem="1RH-h4-vCJ" firstAttribute="trailing" secondItem="tMz-EE-huW" secondAttribute="trailing" constant="20" id="qef-ge-noX"/>
                             <constraint firstItem="x8k-vq-kuv" firstAttribute="centerY" secondItem="BLW-bM-VoM" secondAttribute="centerY" id="stJ-F4-u8Y"/>
                             <constraint firstItem="x8k-vq-kuv" firstAttribute="height" secondItem="BLW-bM-VoM" secondAttribute="height" id="tul-AE-K6W"/>
                             <constraint firstItem="x8k-vq-kuv" firstAttribute="width" secondItem="BLW-bM-VoM" secondAttribute="width" id="yrU-AD-wP0"/>
-                            <constraint firstItem="tMz-EE-huW" firstAttribute="centerX" secondItem="1RH-h4-vCJ" secondAttribute="centerX" id="zPs-Wy-OtB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1RH-h4-vCJ"/>
                     </view>
